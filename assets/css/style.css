@@ -1,0 +1,112 @@
+/**
+ * ST Slider
+ * 
+ * 
+ * @package WordPress
+ * @subpackage st-slider
+ * @author Sumit Tiwari
+ */
+
+@charset "utf-8";
+
+.st-slider {
+	margin: 0;
+	padding: 0;
+}
+
+.st-slider li { 
+	min-height: 350px;
+	display: none;
+	position: relative;
+}
+.st-slider li:nth-of-type(1) { display: block; }
+
+.st-slider li .img-box { width: 100%; }
+
+.st-slider li .img-box img { width: 100%; }
+
+.st-content {
+	padding: 20px 10px;
+}
+
+.st-slider .slider-content {
+	width: 70%;
+	padding: 28px 28px 10px;
+	position: absolute;
+	top: 8%;
+	left: 15%;
+	background: rgba(37, 33, 33, 0.35);
+}
+
+.st-slider .slider-content .st-head {
+	margin-bottom: 0;
+	font: 700 30px/36px Arial;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.st-slider { position: relative; }
+
+.st-slider .slider-content p {
+	font: 500 16px/24px Arial;
+	color: #fff;
+}
+
+.open {
+	animation: slide 1s linear;
+}
+
+@keyframes slide {
+	0% { opacity: 0.6; }
+	100% { opacity: 1; }
+}
+
+.next { 
+	float: right;
+	position: relative; 
+}
+
+.next:after {
+	content: ' ';
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/next.png);
+	background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  cursor: pointer;
+}
+
+.previous { 
+	float: left;
+	position: relative; 
+}
+
+.previous:after {
+	content: ' ';
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/back.png);
+	background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  cursor: pointer;
+}
+
+.button:after {
+	content: ' ';
+	display: table;
+}
+
+.button:before {
+	content: ' ';
+	display: table;
+}
