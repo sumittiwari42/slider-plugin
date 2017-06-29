@@ -21,7 +21,11 @@
 }
 .st-slider li:nth-of-type(1) { display: block; }
 
-.st-slider li .img-box { width: 100%; }
+.st-slider li .img-box { 
+	width: 100%; 
+	max-height: 450px;
+	overflow: hidden;
+}
 
 .st-slider li .img-box img { width: 100%; }
 
@@ -56,6 +60,8 @@
 
 .open {
 	animation: slide 1s linear;
+	-webkit-animation: slide 1s linear;
+	-moz-animation: slide 1s linear;
 }
 
 @keyframes slide {
@@ -63,9 +69,30 @@
 	100% { opacity: 1; }
 }
 
+@-webkit-keyframes slide {
+	0% { opacity: 0.6; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes slide {
+	0% { opacity: 0.6; }
+	100% { opacity: 1; }
+}
+
+/*==========================================
+Next and previous button
+=============================================*/
+.button {
+	width: 90%;
+    position: absolute;
+    top: calc( 50% - 30px);
+    left: 2%;
+}
+
 .next { 
 	float: right;
 	position: relative; 
+	opacity: 0.5;
 }
 
 .next:after {
@@ -82,12 +109,13 @@
   cursor: pointer;
 }
 
-.previous { 
+.previuos { 
 	float: left;
 	position: relative; 
+	opacity: 0.5;
 }
 
-.previous:after {
+.previuos:after {
 	content: ' ';
 	width: 60px;
 	height: 60px;
@@ -109,4 +137,53 @@
 .button:before {
 	content: ' ';
 	display: table;
+}
+
+/*============================================================
+responsive styling
+==============================================================*/
+@media screen and (max-width: 768px) {
+  .next:after,
+  .previuos:after {
+  	width: 40px;
+	height: 40px;
+  }	
+
+  .st-slider .slider-content p { margin: 0; }
+
+  .st-slider .slider-content { padding: 18px 10px 0px; }
+
+ .st-slider .slider-content { 
+ 	width: 90%;
+ 	left: 5%;
+ }
+}
+
+@media screen and (max-width: 480px) {
+
+ .st-slider .slider-content {
+ 	width: 100%;
+ 	margin-top: -12px;
+ 	position: static;
+ }
+
+  .next:after,
+  .previuos:after { display: none; }
+
+  .st-slider .slider-content .st-head { 
+  	font-size: 6vw;
+  	line-height: 7.5vw; 
+  }	
+
+  .st-slider .slider-content p {
+  	font-size: 4.5vw;
+  	line-height: 6vw; 
+  }
+
+  .st-content { padding: 10px; }
+
+  .st-slider .slider-content {
+  	padding: 18px 10px 0px;
+  }
+
 }

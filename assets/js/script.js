@@ -28,14 +28,11 @@
 			/* auto slide*/
 			var auto = setInterval(function(){
 				currentindex = currentindex+1;
-				console.log(currentindex);
 				if(currentindex > length-1){
 					currentindex = 0;
 				}
 				cycle();
 			}, 4000);
-		});	
-
 
 		/* next button click slide*/
 		$(".next").click(function(){
@@ -46,7 +43,7 @@
 			cycle();
 		});
 
-		/* previous button click slide*/
+	  /* previous button click slide*/
 	  $(".previuos").click(function(){
 			currentindex = currentindex-1;
 			if(currentindex > length-1){
@@ -54,5 +51,6 @@
 			}
 			cycle();
 		});
+	 });	 
 
 })(jQuery);
