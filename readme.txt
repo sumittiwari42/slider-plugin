@@ -1,35 +1,21 @@
-=== VG Accordion ===
-Contributors: Vishal Gupta
-Tags: accordion, post-accrodion, custom-accordion.
+=== ST slider ===
+Contributors: Sumit Tiwari
+Tags: slider, post-slider, custom-slider.
 Requires at least: 3.9
-Stable tag: 1.1.0
+Stable tag: 1.0.0
 Tested up to: 4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-VG Accordion is very simple and low weight plugin which helps WordPress/dashboard user to create Accordion by using shortcode i.e. [vg_accordion]
+ST Slider is very simple and low weight slide show plugin which helps WordPress/dashboard user to create Slide Show on page by using shortcode i.e. [st_slider]
 
-we can change the Heading Background color with pass argument "hbg", default color is Transparent.
-ex. [vg_accordion hbg="red"]
-
-we can change the Heading font color with pass argument "hcol", default color is Black.
-ex. [vg_accordion hcol="white"]
-
-we can change the Description/Content Background color with pass argument "cbg", default color is Transparent .
-ex. [vg_accordion cbg="red"]
-
-we can change the Description/Content color color with pass argument "ccol", default color is Black.
-ex. [vg_accordion ccol="white"]
-
-OR we can set all value in one time.
-ex. [vg_accordion hbg="red" cbg="yellow" hcol="white" ccol="Black"]
 
 == Installation ==
 *	Download the plugin .zip file.
 *	Login in to admin Click Plugins -> Add New -> Upload.
-*	Find VG Accordion in plugin list  and activate it.
-*	After activate plugin you will see VG Accordion menu at left side on WordPress dashboard.	
+*	Find ST Slider in plugin list  and activate it.
+*	After activate plugin you will see ST Slider menu at left side on WordPress dashboard.	
 
 == Screenshots ==
 1. screenshots-1.jpg

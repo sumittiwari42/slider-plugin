@@ -48,8 +48,6 @@ function stap_register_post_type() {
 	);
 
 	register_post_type( 'slider', $args );
-
 }
-
 
 add_action( 'init', 'stap_register_post_type' );
